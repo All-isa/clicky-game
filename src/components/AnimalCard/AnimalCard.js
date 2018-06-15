@@ -6,6 +6,7 @@ const AnimalCard = props => (
         <div className="img-container">
             <img alt={props.name} src={props.image} />
         </div>
+        <br></br>
         <div className="content">
             <strong>Name: </strong> {props.name}
         </div>

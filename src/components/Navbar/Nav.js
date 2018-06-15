@@ -3,17 +3,11 @@ import "./Nav.css";
 
 const NavBar = props => (
   <nav>
-    <ul>
-      <li className="brand animated lightSpeedIn">
-        <a href="/clicky-game/">{props.title}</a>
-      </li>
-
-      <li id="rw">{props.rightWrong}</li>
-
-      <li id="cur-sco">Current Score: {props.score}</li>
-
-      <li id="top-sco">Top Score: {props.topScore}</li>
-    </ul>
+      <a href="/clicky-game/">{props.title}</a>
+      <br></br>
+      <p id="rw">{props.rightWrong} </p>
+      <p id="cur-sco">Current Score: {props.score} |</p>
+      <p id="top-sco"> Top Score: {props.topScore}</p>
   </nav>
 );
 

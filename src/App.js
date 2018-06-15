@@ -53,7 +53,7 @@ class App extends Component {
     this.setState({
       currentScore: 0,
       topScore: this.state.topScore,
-      rightWrong: "Reset Game",
+      rightWrong: "Try Again",
       clicked: []
     });
     this.handleShuffle();
@@ -67,7 +67,6 @@ class App extends Component {
 
   render() {
     return (
-      
     <Wrapper>
       <Nav
       title="Animal Clicky Game"
@@ -75,6 +74,7 @@ class App extends Component {
       topScore={this.state.topScore}
       rightWrong={this.state.rightWrong}
       />
+      <img src={logo} className="App-logo" alt="logo" />
     
     <Title>
       Try to click on each animal only once, click twice and you will reset the game.
